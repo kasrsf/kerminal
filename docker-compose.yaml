@@ -6,7 +6,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./kerminal:/app/kerminal
+      - ./backend/kerminal:/app/kerminal
     environment:
       - ENVIRONMENT=development
     command: python -m kerminal.api.main
